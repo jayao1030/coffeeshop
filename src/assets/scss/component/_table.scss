@@ -1,0 +1,36 @@
+.table {
+  display: flex;
+  justify-content: center;
+
+  table {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
+    border-collapse: collapse;
+  }
+
+  thead {
+    background-color: var(--color-primary-dark);
+    color: #fff;
+    width: 100%;
+  }
+
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: var(--color-grey-light-2);
+      }
+      &:hover {
+        background-color: var(--color-grey-light-3);
+      }
+    }
+  }
+
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+  }
+}
